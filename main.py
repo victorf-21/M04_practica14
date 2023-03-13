@@ -15,4 +15,14 @@ data = {"cats":cats_list}
 with open("json_API/cats.json", "w") as file:
     json.dump(data, file)
 
-#Hecho por Albert
+#Hecho por Albert (falta coses)
+from A.Car import car
+
+Cars = [
+        car("Toyota", "Azul", "Quatro", "Mediano"),
+        car("Audi", "Negro", "Cinco", "Deportivo")
+    ]
+
+car_list = [u.to_dict() for u in car]
+
+data = {"car":car_list, "car":car_list}
