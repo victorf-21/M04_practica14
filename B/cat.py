@@ -44,15 +44,3 @@ class cat:
 
     def llamada(self):
         print("EL gato se llama" + self.nombre + " la raza es" + self.raza + ", su sexo es " + self.sexo + ", su color es" + self.color + " y su peso es " + self.peso)
-
-cats = [
-    cat("Michu","callejero","hembra","tricolor","3kg"),
-    cat("Anubis","Sphynx","macho","calvo","2,5kg")
-]
-
-cats_list = [u.to_dict() for u in cats]
-
-data = {"cats":cats_list}
-
-with open("json_API/cats.json", "w") as file:
-    json.dump(data, file)
