@@ -1,4 +1,5 @@
 #Hecho por Victor
+import json
 from B import cat as ct
 
 c1 = ct.cat("Michu","callejero","hembra","tricolor","3kg")
@@ -8,7 +9,7 @@ from B import cat as ca
 c2 = ca.cat("Anubis","Sphynx","macho","calvo","2,5kg")
 c2.llamada()
 
-cats_list = [u.to_dict() for u in cats]
+cats_list = [u.to_dict() for u in c1 and c2]
 
 data = {"cats":cats_list}
 
